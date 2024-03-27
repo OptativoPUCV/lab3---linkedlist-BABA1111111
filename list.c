@@ -134,14 +134,14 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-  void* actual;
+
   if (list->current == NULL){
     list->current = NULL;
     list->head = NULL;
     list->tail = NULL;
   }
   else{
-    actual = list->current;
+    
     if (list->current->next->next != NULL){
       list->current->prev->next = list->current->next;
       list->current->next->prev = list->current->prev;
@@ -151,7 +151,7 @@ void * popCurrent(List * list) {
     }
 
   }
-    return actual;
+    return list->current;
 }
 
 void cleanList(List * list) {
