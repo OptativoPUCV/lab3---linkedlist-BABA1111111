@@ -151,7 +151,7 @@ void * popCurrent(List * list) {
     }
 
   }
-    return nodoELiminar->data;
+    return nodoEliminar->data;
 }
 
 void cleanList(List * list) {
