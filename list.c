@@ -41,13 +41,11 @@ List * createList() {
 
 void * firstList(List * list) {
 
-  if (list->head->data == NULL){
-    return NULL;
+  while (list->head != NULL){
+    return list->head;
   }
-  else{
-    return list->head->data;
-  }
-    
+  return 
+  
 }
 
 void * nextList(List * list) {
