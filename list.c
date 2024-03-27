@@ -44,7 +44,6 @@ void * firstList(List * list) {
   while (list->head->data != NULL){
     return list->head->data;
   }
-  return NULL;
   
 }
 
