@@ -195,3 +195,17 @@ Wed 27 Mar 2024 08:43:03 PM UTC:
  tests:  2|5
 total_score: 15/70
 11413c1
+Wed 27 Mar 2024 08:44:09 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:54:31: error: expected expression before ‘)’ token
+   54 |   if (list->current != NULL &&){
+      |                               ^
+list.c:60:1: error: control reaches end of non-void function [-Werror=return-type]
+   60 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+262fff8
