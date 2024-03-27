@@ -40,11 +40,16 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-  Node* primero = createNode(list->head->data);
+
+  while(list->current != NULL){
+    list->head = list->current->data;
+  }
+
+  
 
   
   
-    return primero;
+    return;
 }
 
 void * nextList(List * list) {
