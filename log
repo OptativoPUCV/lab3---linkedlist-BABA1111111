@@ -379,3 +379,26 @@ Wed 27 Mar 2024 10:20:25 PM UTC:
  1 file changed, 2 insertions(+)
  tests:  0|0
 63af112
+Wed 27 Mar 2024 10:21:58 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:144:6: error: ‘Nodo’ undeclared (first use in this function); did you mean ‘Node’?
+  144 |     *Nodo nodoELiminar = list->current;
+      |      ^~~~
+      |      Node
+list.c:144:6: note: each undeclared identifier is reported only once for each function it appears in
+list.c:144:10: error: expected ‘;’ before ‘nodoELiminar’
+  144 |     *Nodo nodoELiminar = list->current;
+      |          ^~~~~~~~~~~~~
+      |          ;
+list.c:156:12: error: ‘nodoELiminar’ undeclared (first use in this function)
+  156 |     return nodoELiminar->data;
+      |            ^~~~~~~~~~~~
+list.c:157:1: error: control reaches end of non-void function [-Werror=return-type]
+  157 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+5e0effc
