@@ -40,3 +40,9 @@ list.c:42:8: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 642c32e
+Wed 27 Mar 2024 08:23:50 PM UTC: 
+ list.c | 11 +++--------
+ 1 file changed, 3 insertions(+), 8 deletions(-)
+ tests:  1|5
+total_score: 10/70
+3cfd398
