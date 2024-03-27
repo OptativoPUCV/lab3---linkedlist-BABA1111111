@@ -45,7 +45,7 @@ void * firstList(List * list) {
     return NULL;
   }
   else{
-    return list->head->data;
+    return list->head;
   }
 }
 
