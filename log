@@ -167,3 +167,13 @@ Wed 27 Mar 2024 08:39:35 PM UTC:
  tests:  2|5
 total_score: 15/70
 caa3e12
+Wed 27 Mar 2024 08:41:20 PM UTC: 
+ list.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:57:3: error: ‘else’ without a previous ‘if’
+   57 |   else{
+      |   ^~~~
+Compilation failed
+bc7659e
