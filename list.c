@@ -40,11 +40,11 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-  createNode(list->head->data);
+  Node* primero = createNode(list->head->data);
 
   
   
-    return NULL;
+    return primero;
 }
 
 void * nextList(List * list) {
