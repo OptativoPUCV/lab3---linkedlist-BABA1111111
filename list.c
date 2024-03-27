@@ -142,15 +142,13 @@ void * popCurrent(List * list) {
   }
   else{
     *Nodo nodoELiminar = list->current;
-    if (list->current->next->next != NULL){
-      list->current->prev->next = list->current->next;
-      list->current->next->prev = list->current->prev;
+    if (nodoELiminar->next != NULL){
+      nodoEliminar->next = list->current->next;
+      nodoEliminar->prev = list->current->prev;
     }
     else{
-      list->current->prev = list->tail;
+      nodoEliminar->prev = list->tail;
     }
-    list->current->prev = NULL;
-    list->current->next = NULL;
 
   }
     return nodoELiminar->data;
