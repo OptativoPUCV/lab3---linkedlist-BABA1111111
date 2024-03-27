@@ -40,6 +40,10 @@ List * createList() {
 }
 
 void * firstList(List * list) {
+  createNode(list->head);
+
+  
+  
     return NULL;
 }
 
