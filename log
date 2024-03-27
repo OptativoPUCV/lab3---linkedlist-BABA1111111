@@ -498,3 +498,26 @@ list.c:155:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 a41e0b2
+Wed 27 Mar 2024 10:35:53 PM UTC: 
+ list.c | 19 +++++++++++++------
+ 1 file changed, 13 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:144:6: error: ‘Nodo’ undeclared (first use in this function); did you mean ‘Node’?
+  144 |     *Nodo nodoELiminar = list->current;
+      |      ^~~~
+      |      Node
+list.c:144:6: note: each undeclared identifier is reported only once for each function it appears in
+list.c:144:10: error: expected ‘;’ before ‘nodoELiminar’
+  144 |     *Nodo nodoELiminar = list->current;
+      |          ^~~~~~~~~~~~~
+      |          ;
+list.c:161:12: error: ‘nodoELiminar’ undeclared (first use in this function)
+  161 |     return nodoELiminar->data;
+      |            ^~~~~~~~~~~~
+list.c:162:1: error: control reaches end of non-void function [-Werror=return-type]
+  162 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+220b2ad
