@@ -86,8 +86,9 @@ void pushFront(List * list, void * data) {
   while (list->current->next != NULL){
     list->current = list->current->next;
     list->current->prev = list->current;
+    list->current->data = data;
   }
-  list->current->data = data;
+  
   
 }
 
