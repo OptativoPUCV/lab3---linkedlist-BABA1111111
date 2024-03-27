@@ -40,12 +40,12 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-  if (list == NULL || list->head == NULL){
-    return NULL;
+
+  while (list->head != NULL){
+    return list->head;
   }
   
-    return list->head;
-}
+}  return NULL;
 
 void * nextList(List * list) {
     return NULL;
