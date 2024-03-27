@@ -40,7 +40,7 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-  createNode(list->head);
+  createNode(list->head->data);
 
   
   
