@@ -588,3 +588,24 @@ list.c:161:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 be01291
+Wed 27 Mar 2024 10:40:52 PM UTC: 
+ list.c | 7 -------
+ 1 file changed, 7 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:138:3: error: unknown type name ‘Nodo’; did you mean ‘Node’?
+  138 |   Nodo* nodoEliminar = list->current;
+      |   ^~~~
+      |   Node
+list.c:138:24: error: initialization of ‘int *’ from incompatible pointer type ‘Node *’ [-Werror=incompatible-pointer-types]
+  138 |   Nodo* nodoEliminar = list->current;
+      |                        ^~~~
+list.c:153:22: error: request for member ‘data’ in something not a structure or union
+  153 |   return nodoEliminar->data;
+      |                      ^~
+list.c:154:1: error: control reaches end of non-void function [-Werror=return-type]
+  154 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+56dac78
