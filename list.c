@@ -141,7 +141,7 @@ void * popCurrent(List * list) {
     list->tail = NULL;
   }
   else{
-    *Nodo nodoELiminar = list->current;
+    Nodo* nodoEliminar = list->current;
     if (list->current->next != NULL){
       list->current->next->prev = list->current->prev;
     }
@@ -158,7 +158,7 @@ void * popCurrent(List * list) {
 
 
   }
-    return nodoELiminar->data;
+    return nodoEliminar->data;
 }
 
 void cleanList(List * list) {

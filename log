@@ -521,3 +521,28 @@ list.c:162:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 220b2ad
+Wed 27 Mar 2024 10:36:20 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:144:5: error: unknown type name ‘Nodo’; did you mean ‘Node’?
+  144 |     Nodo* nodoEliminar = list->current;
+      |     ^~~~
+      |     Node
+list.c:144:26: error: initialization of ‘int *’ from incompatible pointer type ‘Node *’ [-Werror=incompatible-pointer-types]
+  144 |     Nodo* nodoEliminar = list->current;
+      |                          ^~~~
+list.c:144:11: error: unused variable ‘nodoEliminar’ [-Werror=unused-variable]
+  144 |     Nodo* nodoEliminar = list->current;
+      |           ^~~~~~~~~~~~
+list.c:161:12: error: ‘nodoEliminar’ undeclared (first use in this function)
+  161 |     return nodoEliminar->data;
+      |            ^~~~~~~~~~~~
+list.c:161:12: note: each undeclared identifier is reported only once for each function it appears in
+list.c:162:1: error: control reaches end of non-void function [-Werror=return-type]
+  162 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+5e30a00
