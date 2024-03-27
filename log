@@ -177,3 +177,9 @@ list.c:57:3: error: ‘else’ without a previous ‘if’
       |   ^~~~
 Compilation failed
 bc7659e
+Wed 27 Mar 2024 08:41:37 PM UTC: 
+ list.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  2|5
+total_score: 15/70
+e05d5c1
