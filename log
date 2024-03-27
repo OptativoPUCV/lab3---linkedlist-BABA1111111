@@ -136,3 +136,17 @@ Wed 27 Mar 2024 08:35:16 PM UTC:
  tests:  1|5
 total_score: 10/70
 76f0b63
+Wed 27 Mar 2024 08:35:26 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:48:12: error: incompatible types when returning type ‘Node’ but ‘void *’ was expected
+   48 |     return *list->head;
+      |            ^~~~~~~~~~~
+list.c:50:1: error: control reaches end of non-void function [-Werror=return-type]
+   50 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+8722093
