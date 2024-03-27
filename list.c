@@ -155,6 +155,7 @@ void * popCurrent(List * list) {
     else{
       list->head = list->current->next;
     }
+    free(nodoEliminar);
     return nodoEliminar->data;
   }
 }
